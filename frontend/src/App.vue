@@ -1,41 +1,63 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <div class="card">        
+          <div class="home"><RouterLink to="/">Home</RouterLink></div>
+          <div class="about"><RouterLink to="/about">About</RouterLink></div>
+        </div>
       </nav>
-    </div>
   </header>
 
   <RouterView />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.home{
+  display: inherit;
+  height: 100%;
+}
+.home a{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.about a{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.about{
+  display: inherit;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.card{
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header{
+  display: flex;
+  height: 7%;
 }
 
 nav {
+  background-color: rgb(49, 49, 49);
+  display: flex;
   width: 100%;
-  font-size: 12px;
+  height: 100%;
+  font-size: 20px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -56,30 +78,12 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+@media (hover: hover) {
+  .home:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+  .about:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
 </style>
