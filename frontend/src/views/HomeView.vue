@@ -71,12 +71,6 @@
 </template>
 
 <style>
-
-
-.body {
-    top: 7%;
-    position: absolute;
-}
 .main-part{
         display: flex;
         background-color: rgb(67, 67, 67);

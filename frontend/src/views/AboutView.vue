@@ -5,8 +5,4 @@
 </template>
 
 <style>
-.body {
-    top: 7%;
-    position: absolute;
-}
 </style>
