@@ -47,21 +47,12 @@ const items = ref([
                       <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down ml-2" />
                   </a>
               </template>
-      <template #end id="end">
-          <div class="search">
-              <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
-          </div>
-      </template>
   </Menubar>
   </header>
   <RouterView />
 </template>
 
 <style scoped>
-
-.p-menubar-end{
-  right:0%
-}
 
 header{
   z-index: 10;
