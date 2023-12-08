@@ -18,6 +18,7 @@ let i = ref(getRandomNumber(min, max));
 
 let rep = "???";
 let real = "";
+let nbreussi = 0, nbtoto = 0;
 let colortext = "grey";
 
 let tableauDObjets: QuestionReponse[] = [
@@ -67,11 +68,13 @@ function verif(valeur: string) {
     rep = "Vrai";
     real = tableauDObjets[i.value].Real;
     colortext = "green"
+    nbreussi=nbreussi+1;
   } else {
     rep = "Faux"
     real = tableauDObjets[i.value].Real;
     colortext = "red"
   }
+  nbtoto=nbtoto+1;
   i.value = getRandomNumber(min, max);
 }
 </script>
@@ -84,6 +87,7 @@ function verif(valeur: string) {
       <button class="button-plus" @click="() => verif('P')" value="P">Plus</button>
       <button class="button-moin" @click="() => verif('M')" value="M">Moins</button>
     </div>
+    <p class="Score">Score: {{ nbreussi }}/{{ nbtoto }}</p>
   </div>
 </template>
 
@@ -93,7 +97,6 @@ function verif(valeur: string) {
   top: 7%;
   position: absolute;
   width: 100%;
-  height: 93%;
 }
 
 .rep{
@@ -130,6 +133,13 @@ function verif(valeur: string) {
   height: 100%;
   font-size: 10vw;
   background-color: brown;
+}
+
+.Score{
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 5%;
+  background-color: rgb(67, 67, 67);
 }
 
 </style>
