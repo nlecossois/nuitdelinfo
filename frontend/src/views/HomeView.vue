@@ -3,5 +3,14 @@
 </script>
 
 <template>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="body">
+
+        </div>
 </template>
+
+<style>
+.body {
+    top: 7%;
+    position: absolute;
+}
+</style>
