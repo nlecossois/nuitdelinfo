@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
-import router from './router';
 
 const items = ref([
   {
@@ -10,29 +9,23 @@ const items = ref([
     route:'/',
   },
   {
-    label: 'Games',
-    icon: 'pi pi-star',
-    items: [
-      {
-        label: 'Map',
-        icon: 'pi pi-bolt',
-        route:'/map'
-      },
-      {
-        label: 'Quiz',
-        icon: 'pi pi-server',
-        route:'/quiz'
-      },
-      {
-        label: 'Guess',
-        icon: 'pi pi-pencil',
-        route:'/guess'
-      },
-    ]
+    label: 'Map',
+    icon: 'pi pi-globe',
+    route:'/map'
+  },
+  {
+    label: 'Quiz',
+    icon: 'pi pi-question-circle',
+    route:'/quiz'
+  },
+  {
+     label: 'Guess',
+     icon: 'pi pi-verified',
+     route:'/guess'
   },
   {
     label: 'About',
-    icon: 'pi pi-envelope',
+    icon: 'pi pi-info-circle',
     route:'/about',
   }
 ]);
@@ -54,25 +47,33 @@ const items = ref([
                       <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down ml-2" />
                   </a>
               </template>
-      <template #end>
-          <div class="flex align-items-center gap-2">
+      <template #end id="end">
+          <div class="search">
               <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
           </div>
       </template>
   </Menubar>
   </header>
-
   <RouterView />
 </template>
 
 <style scoped>
 
+.p-menubar-end{
+  right:0%
+}
+
 header{
+  position: fixed;
   display: flex;
   height: 7%;
   width: 100%;
 }
 .nav{
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   width:100%;
   background-color: rgb(49,49,49);
   border:none
