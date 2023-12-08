@@ -52,8 +52,10 @@ function switchcard(valeur: string){
         </p>
       </template>
       <template #footer>
-        <Button @click= "() => switchcard('p')" icon="pi pi-chevron-left" label="Preview" />
-        <Button @click="() => switchcard('n')" icon="pi pi-chevron-right" label="Next"  style="margin-left: 35%" />
+        <div class="footercard">
+          <Button @click= "() => switchcard('p')" icon="pi pi-chevron-left" label="Preview" />
+          <Button @click="() => switchcard('n')" icon="pi pi-chevron-right" label="Next"  style="margin-left: 35%" />
+        </div>
       </template>
     </Card>
 
@@ -63,7 +65,7 @@ function switchcard(valeur: string){
 
 .card{
   width: 30%;
-  height: 50em;
+  min-height: 443px;
   margin-top: 7%;
   margin-left: 35%;
   border-radius: 5%;

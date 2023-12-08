@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import GuessView from '../views/GuessView.vue'
 import QuizView from '../views/QuizView.vue'
-import MapView from '../views/MapView.vue'
+import CardView from '../views/CardView.vue'
 
 
 const router = createRouter({
@@ -30,9 +30,9 @@ const router = createRouter({
       component: QuizView
     },
         {
-      path: '/map',
-      name: 'map',
-      component: MapView
+      path: '/card',
+      name: 'card',
+      component: CardView
     },
   ]
 })

@@ -9,9 +9,9 @@ const items = ref([
     route:'/',
   },
   {
-    label: 'Map',
-    icon: 'pi pi-globe',
-    route:'/map'
+    label: 'Card',
+    icon: 'pi pi-clone',
+    route:'/card'
   },
   {
     label: 'Quiz',
@@ -20,7 +20,7 @@ const items = ref([
   },
   {
      label: 'Guess',
-     icon: 'pi pi-verified',
+     icon: 'pi pi-bolt',
      route:'/guess'
   },
   {
