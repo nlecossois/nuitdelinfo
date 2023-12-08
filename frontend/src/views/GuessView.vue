@@ -93,11 +93,6 @@ function verif(valeur: string) {
 
 
 <style>
-.body {
-  top: 7%;
-  position: absolute;
-  width: 100%;
-}
 
 .rep{
   text-align: center;

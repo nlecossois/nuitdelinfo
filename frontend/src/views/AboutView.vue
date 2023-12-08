@@ -46,10 +46,6 @@
 </template>
 
 <style>
-.body {
-  top: 7%;
-  position: absolute;
-}
 
 .politique{
   text-align: center;
@@ -58,4 +54,5 @@
   margin-top: 5%;
   font-size: 1.5vw;
 }
+
 </style>
