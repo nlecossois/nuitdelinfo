@@ -44,12 +44,13 @@ function scrollToSection() {
             <p class="card-titre-1">Quiz</p>
           </template>
         </Card></a>
-      <Card class="tird-part-card2">
-        <template #header>
-          <img class="card2-img" alt="earth" src="../assets/img/earth.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
-          <p class="card-titre-2">Bientôt</p>
-        </template>
-      </Card>
+      <a href="http://127.0.0.1:5173/map">
+        <Card class="tird-part-card2">
+          <template #header>
+            <img class="card2-img" alt="earth" src="../assets/img/earth.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
+            <p class="card-titre-2">Carte</p>
+          </template>
+        </Card></a>
       <a href="http://127.0.0.1:5173/guess">
         <Card class="tird-part-card">
           <template #header>
@@ -147,6 +148,7 @@ function scrollToSection() {
   justify-content: center;
   padding-top: 10%;
   padding-bottom: 10%;
+  gap: 10rem;
 }
 
 .tird-part-card1{
@@ -175,7 +177,7 @@ function scrollToSection() {
   filter: blur(5px) brightness(0.5);
 }
 
-.card2-img{
+.card2-img:hover{
   filter: blur(5px) brightness(0.5);
 }
 
@@ -212,8 +214,7 @@ function scrollToSection() {
   width: 25em;
   height: 35em;
   border-radius: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+
 }
 .four-part{
   background-color: rgb(49, 49, 49);
