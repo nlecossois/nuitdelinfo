@@ -169,7 +169,7 @@ function scrollToSection() {
 
 .tird-part-card{
   width: 20vw;
-  height: 90%;
+  height: 80%;
   border-radius: 10%;
 }
 
@@ -212,14 +212,14 @@ function scrollToSection() {
 
 .tird-part-card2{
   width: 20vw;
-  height: 90%;
+  height: 80%;
   border-radius: 10%;
 
 }
 
 .tird-part-card3{
   width: 20vw;
-  height: 90%;
+  height: 80%;
   border-radius: 10%;
 }
 
