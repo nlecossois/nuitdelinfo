@@ -46,14 +46,14 @@ function switchcard(valeur: string){
   <div class="body">
     <Card class="card" :pt="{ title: { class: 'card-title' },content:{class: 'card-content'}, footer: {class: 'card-footer'} }">
       <template #title >{{ tableauDObjets[i].titre }}</template>
-      <template #content class="card-content">
+      <template #content>
         <p class="m-0">
           {{ tableauDObjets[i].info }}
         </p>
       </template>
       <template #footer>
-        <Button @click= "() => switchcard('p')" icon="pi pi-chevron-left" label="  Preview" />
-        <Button @click="() => switchcard('n')" icon="pi pi-chevron-right" label="  Next"  style="margin-left: 35%" />
+        <Button @click= "() => switchcard('p')" icon="pi pi-chevron-left" label="Preview" />
+        <Button @click="() => switchcard('n')" icon="pi pi-chevron-right" label="Next"  style="margin-left: 35%" />
       </template>
     </Card>
 
