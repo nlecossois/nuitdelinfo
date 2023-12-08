@@ -52,7 +52,7 @@ function scrollToSection() {
           </template>
         </Card></a>
       <a href="http://127.0.0.1:5173/guess">
-        <Card class="tird-part-card">
+        <Card class="tird-part-card3">
           <template #header>
             <img class="card3-img filter-class"  alt="factguess" src="../assets/img/guess.jpg" style="width: 100%;height: 100%;border-radius: 10%;"/>
             <p class="card-titre-3">Guess</p>
@@ -168,8 +168,8 @@ function scrollToSection() {
 }
 
 .tird-part-card{
-  width: 25em;
-  height: 35em;
+  width: 20vw;
+  height: 90%;
   border-radius: 10%;
 }
 
@@ -211,11 +211,20 @@ function scrollToSection() {
 }
 
 .tird-part-card2{
-  width: 25em;
-  height: 35em;
+  width: 20vw;
+  height: 90%;
   border-radius: 10%;
 
 }
+
+.tird-part-card3{
+  width: 20vw;
+  height: 90%;
+  border-radius: 10%;
+}
+
+
+
 .four-part{
   background-color: rgb(49, 49, 49);
   padding-top: 3%;
