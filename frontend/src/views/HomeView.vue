@@ -37,27 +37,27 @@ function scrollToSection() {
 
     </div>
     <div class="tird-part" id="sectionToScrollTo">
-      <a href="/quiz">
+      <router-link to="/quiz">
         <Card class="tird-part-card" oncl>
           <template #header>
             <img class="card1-img"  alt="factguess" src="../assets/img/quizz.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
             <p class="card-titre-1">Quiz</p>
           </template>
-        </Card></a>
-      <a href="/card">
+        </Card></router-link>
+      <router-link to="/card">
         <Card class="tird-part-card2">
           <template #header>
             <img class="card2-img" alt="earth" src="../assets/img/card.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
             <p class="card-titre-2">Card</p>
           </template>
-        </Card></a>
-      <a href="/guess">
+        </Card></router-link>
+      <router-link to="/guess">
         <Card class="tird-part-card3">
           <template #header>
             <img class="card3-img filter-class"  alt="factguess" src="../assets/img/guess.jpg" style="width: 100%;height: 100%;border-radius: 10%;"/>
             <p class="card-titre-3">Guess</p>
           </template>
-        </Card></a>
+        </Card></router-link>
     </div>
     <div class="four-part">
       <h2 class="four-part-h2">Voici l'impact écologique sur l'augmentation de la température</h2>
