@@ -11,5 +11,6 @@
 .body {
     top: 7%;
     position: absolute;
+    background-color: black;
 }
 </style>

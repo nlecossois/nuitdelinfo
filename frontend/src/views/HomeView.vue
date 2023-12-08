@@ -19,23 +19,23 @@
             <img src="../assets/img/home-ecologie.jpg" alt="home-ecologie" class="main-part-img">
         </div>
         <div class="second-part">
-            <h2 class="second-part-h2">L'écologie c'est quoi ? et comment agire.</h2>
+            <h2 class="second-part-h2">L'écologie c'est quoi ? et comment agir.</h2>
             <p class ="second-part-p">L'écologie étudie les interactions entre les êtres vivants et leur environnement. Pour agir en faveur de l'écologie, adoptez des pratiques éco-responsables, favorisez la conservation de l'énergie, gérez les déchets de manière durable, et soutenez des initiatives locales et globales pour préserver la biodiversité.</p>
 
         </div>
         <div class="tird-part">
             <Card class="tird-part-card">
-                <template #header style="height: 100%;">
-                    <img alt="factguess" src="../assets/img/quizz.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
+                <template #header>
+                    <img alt="factguess" src="../assets/img/quizz.png" style="width: 100%;height: 100% !important;border-radius: 10%;"/>
                 </template>
             </Card>
             <Card class="tird-part-card2">
-                <template #header style="height: 100%;">
+                <template #header>
                     <img alt="earth" src="../assets/img/earth.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
                 </template>
             </Card>
             <Card class="tird-part-card">
-                <template #header style="height: 100%;">
+                <template #header>
                     <img alt="factguess" src="../assets/img/quizz.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
                 </template>
             </Card>
@@ -71,6 +71,8 @@
 </template>
 
 <style>
+
+
 .body {
     top: 7%;
     position: absolute;
