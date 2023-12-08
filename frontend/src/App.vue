@@ -64,6 +64,7 @@ const items = ref([
 }
 
 header{
+  z-index: 10;
   position: fixed;
   display: flex;
   height: 7%;
