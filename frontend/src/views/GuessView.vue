@@ -18,7 +18,7 @@ let i = ref(getRandomNumber(min, max));
 
 let rep = "???";
 let real = "";
-let nbreussi = 0, nbtoto = 0;
+let nbreussi = 0, nbtoto = 0, nbfaute = 0;
 let colortext = "grey";
 
 let tableauDObjets: QuestionReponse[] = [
@@ -69,23 +69,30 @@ function verif(valeur: string) {
     real = tableauDObjets[i.value].Real;
     colortext = "green"
     nbreussi=nbreussi+1;
+    nbfaute = 0
   } else {
+    nbfaute= nbfaute+1
     rep = "Faux"
     real = tableauDObjets[i.value].Real;
     colortext = "red"
   }
+  console.log(nbfaute)
   nbtoto=nbtoto+1;
   i.value = getRandomNumber(min, max);
+
+  if (nbfaute===5){
+    rep = "T'es Guez man"
+  }
 }
 </script>
 
 <template>
   <div class="body">
     <h1 class="question">{{ tableauDObjets[i].Question }}</h1>
-    <p class="rep" :style="{color : colortext}">{{ rep }} ({{ real }})</p>
+    <p class="rep" :style="{color : colortext}">Réponse précédente : {{ rep }} ({{ real }})</p>
     <div class="allbutton">
-      <button class="button-plus" @click="() => verif('P')" value="P">Plus</button>
-      <button class="button-moin" @click="() => verif('M')" value="M">Moins</button>
+      <button class="button-plus" @click="() => verif('P')">Plus</button>
+      <button class="button-moin" @click="() => verif('M')">Moins</button>
     </div>
     <p class="Score">Score: {{ nbreussi }}/{{ nbtoto }}</p>
   </div>
@@ -93,6 +100,11 @@ function verif(valeur: string) {
 
 
 <style>
+.body {
+  top: 7%;
+  position: absolute;
+  width: 100%;
+}
 
 .rep{
   text-align: center;
