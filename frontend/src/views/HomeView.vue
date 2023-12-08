@@ -37,21 +37,21 @@ function scrollToSection() {
 
     </div>
     <div class="tird-part" id="sectionToScrollTo">
-      <a href="http://127.0.0.1:5173/quiz">
+      <a href="/quiz">
         <Card class="tird-part-card" oncl>
           <template #header>
             <img class="card1-img"  alt="factguess" src="../assets/img/quizz.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
             <p class="card-titre-1">Quiz</p>
           </template>
         </Card></a>
-      <a href="http://127.0.0.1:5173/map">
+      <a href="/card">
         <Card class="tird-part-card2">
           <template #header>
-            <img class="card2-img" alt="earth" src="../assets/img/earth.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
-            <p class="card-titre-2">Carte</p>
+            <img class="card2-img" alt="earth" src="../assets/img/card.png" style="width: 100%;height: 100%;border-radius: 10%;"/>
+            <p class="card-titre-2">Card</p>
           </template>
         </Card></a>
-      <a href="http://127.0.0.1:5173/guess">
+      <a href="/guess">
         <Card class="tird-part-card3">
           <template #header>
             <img class="card3-img filter-class"  alt="factguess" src="../assets/img/guess.jpg" style="width: 100%;height: 100%;border-radius: 10%;"/>
@@ -66,23 +66,25 @@ function scrollToSection() {
     </div>
     <div class="five-part" style="padding-left: 3%;background-color: rgb(67, 67, 67);">
       <div style="display: flex;">
-        <div class="five-part-value1">
-          <img class="five-part-img1" src="../assets/img/biodiversite.png" alt="bio diversité">
-          <p class="five-part-p1">Variété des formes de vie sur Terre, essentielle pour l'équilibre des écosystèmes.</p>
+        <div>
+          <div class="five-part-value1">
+            <img class="five-part-img1" src="../assets/img/biodiversite.png" alt="bio diversité">
+            <p class="five-part-p1">Variété des formes de vie sur Terre, essentielle pour l'équilibre des écosystèmes.</p>
+          </div>
+          <div class="five-part-value1">
+            <img class="five-part-img1" src="../assets/img/green.png" alt="Empreinte écologique">
+            <p class="five-part-p1">Mesure de l'impact humain sur l'environnement, incluant la consommation de ressources et la production de déchets.</p>
+          </div>
         </div>
-        <div class="five-part-value1">
-          <img class="five-part-img1" src="../assets/img/green.png" alt="Empreinte écologique">
-          <p class="five-part-p1">Mesure de l'impact humain sur l'environnement, incluant la consommation de ressources et la production de déchets.</p>
-        </div>
-      </div>
-      <div style="display: flex;">
-        <div class="five-part-value1">
-          <img class="five-part-img1" src="../assets/img/clim.png" alt="Changement climatique">
-          <p class="five-part-p1">Altérations à long terme des conditions météorologiques moyennes, principalement causées par les activités humaines.</p>
-        </div>
-        <div class="five-part-value1">
-          <img class="five-part-img1" src="../assets/img/devdurable.png" alt="Développement durable">
-          <p class="five-part-p1">Répondre aux besoins actuels sans compromettre la capacité des générations futures, intégrant économie, société et environnement.</p>
+        <div>
+          <div class="five-part-value1">
+            <img class="five-part-img1" src="../assets/img/clim.png" alt="Changement climatique">
+            <p class="five-part-p1">Altérations à long terme des conditions météorologiques moyennes, principalement causées par les activités humaines.</p>
+          </div>
+          <div class="five-part-value1">
+            <img class="five-part-img1" src="../assets/img/devdurable.png" alt="Développement durable">
+            <p class="five-part-p1">Répondre aux besoins actuels sans compromettre la capacité des générations futures, intégrant économie, société et environnement.</p>
+          </div>
         </div>
       </div>
     </div>
